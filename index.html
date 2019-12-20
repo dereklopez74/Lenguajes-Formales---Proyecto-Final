@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<meta name="tipo_contenido"  content="text/html;" http-equiv="content-type" charset="utf-8">
+	<title>
+		PROYECTO FINAL
+	</title>
+
+	<script type="text/javascript" src="js/jquery.js"></script>
+	<script type="text/javascript" src="js/library.js"></script>	
+	<script type="text/javascript" src="js/help.js"></script>
+	<script type="text/javascript" src="js/controller.js"></script>
+	<script type="text/javascript" src="js/index.js"></script>
+
+	<link href="img/favicon.ico" type="image/x-icon" rel="shortcut icon" />
+	<link href='http://fonts.googleapis.com/css?family=Francois+One' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="css/estilos.css" type="style/text">
+	<link type="text/css" rel="stylesheet" href="css/bootstrap.css">
+
+	<link type="text/css" rel="stylesheet" href="css/bootstrap-theme.css">
+	<link type="text/css" rel="stylesheet" href="css/bootstrap-theme.css">
+	<link type="text/css" rel="stylesheet" href="css/bootstrap-theme.css.map">
+	<link type="text/css" rel="stylesheet" href="css/bootstrap.css.map">
+	<link type="text/css" rel="stylesheet" href="css/bootstrap.min.css">
+
+</head>
+
+<header>
+	<nav class="navbar navbar-light" style="background-color: #FD6848;">
+		
+			<button type="button" class="btn btn-outline-dark">ANALIZADOR LÉXICO</a>
+				<button type="button" class="btn btn-outline-dark">
+					<span id="datetime"></span>
+						<script>
+							var dt = new Date();
+							document.getElementById("datetime").innerHTML = (("0"+dt.getDate()).slice(-2)) +"."+ (("0"+(dt.getMonth()+1)).slice(-2)) +"."+ (dt.getFullYear()) +" "+ (("0"+dt.getHours()).slice(-2)) +":"+ (("0"+dt.getMinutes()).slice(-2));
+						</script>   
+					</button>   
+		
+	  </nav>
+</header>
+<body background="img/fondo2.jpg">
+<div class="p-3 mb-2 text-dark">
+<div class="container">
+	
+		<div class="row">		
+		<div class="col-md-6 text-center">
+			<div class="card h-80">
+			<div class="jumbotron">
+				<div class="container-fluid">					
+					<center><h3 class="card-header" id="a">ENTRADA DE DATOS</h3></center>			
+					<div class="card-body">
+						<textarea id="textid" placeholder="Ingrese palabra" class="form-control" style="height:210px; width=300px;"></textarea>
+						<label id="result" class="form-control btn-danger" disabled for="inputSucces1">Ingrese componente</label>
+					</div>
+				</div>
+			</div>
+			</div>
+		</div>
+		<div class="col-md-6">
+			<div class="card h-30">
+			<div class="jumbotron">
+				<div class="container">
+					<center><h3 class="card-header">Análisis léxico</h3></center>
+					<br>
+					<div id="list-elemets" class="text-center">
+						<div class="row">
+							<div class="col-md-6">
+							<div class="form-group has-success">
+								<select id="nombre" size="1" class="form-control">
+									<option value="0">Token</option>
+								</select>
+							</div>
+							</div>
+							<div class="col-md-6">
+							<div class="form-group has-success">
+								<select id="lexema" size="1" class="form-control">
+									<option value='0'>Lexema</option>
+								</select>
+							</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		</div>
+	</div>
+	</div>
+</div>
+</body>
+
+	 <!-- Footer -->
+   
+
+     <footer class="py-5 bg-dark">
+		<div class="container">
+		  <h4 class="m-0 text-center text-white">LENGUAJES FORMALES AUTÓMATAS Y PROCESADORES DE LENGUAJE</h4>
+		  <h4 class="m-0 text-center text-white">UNIVERSIDAD TECNOLÓGICA DE PANAMÁ</h4>
+		</div>
+		<!-- /.container -->
+	  </footer><!--/#footer-->
+    <!-- /Footer -->
+
+	
+</body>
+</html>
